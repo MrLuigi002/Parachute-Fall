@@ -130,8 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cfe391b77a88bf4e9127b6d264acac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cloudObs: {fileID: 8824192768985154048}
-  cloudRigidbody: {fileID: 8824192768985154054}
+  obstacleRigidbody: {fileID: 8824192768985154054}
   lateralSpeed: 0.3
   pushSpeed: 2
   direction: 0
