@@ -11,11 +11,16 @@ public class UIScript : MonoBehaviour
     public Text scoreText;
     public Text highText;
 
-    // Start is called before the first frame update
+    void Awake() 
+    {
+        highScore = PlayerPrefs.GetInt("highScore");
+        highText.text = "HIGH SCORE: " + highScore;
+    }
+
     void Start()
     {
-        InvokeRepeating("AddScore", 0f, 1f);
-        highScore = PlayerPrefs.GetInt("highScore");
+        InvokeRepeating("AddScore", 1f, 1f);
+        
     }
 
     // Update is called once per frame
