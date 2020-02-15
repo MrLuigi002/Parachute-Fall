@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class ObstaclesMovement : MonoBehaviour
 {
+    public Rigidbody2D obstacleRigidbody;
 
-    public GameObject cloudObs;
+    public float lateralSpeed = 1f;     //Speed it moves
+    public float pushSpeed = 10f;       //Speed at which it is pushed
 
-    public Rigidbody2D cloudRigidbody;
-
-    public float lateralSpeed = 1f;
-    public float pushSpeed = 10f;
-
-    public enum Direction{left, right};
+    public enum Direction{left, right}; //Direction selector
     public Direction direction;
 
     Vector2 movementDirection = new Vector2();
   
     void Awake() 
     {
-        if(direction.ToString() == "left")
+        if(direction.ToString() == "left") //Direction check
         {
             movementDirection = Vector2.left;
         }
@@ -32,7 +29,7 @@ public class ObstaclesMovement : MonoBehaviour
     
     void Start()
     {
-        Invoke("DestroyObject", 12f);
+        Invoke("DestroyObject", 12f); //Time it takes to disappear
     }
 
     
@@ -40,11 +37,11 @@ public class ObstaclesMovement : MonoBehaviour
     {
         //transform.position = transform.position + lateralSpeed * Time.deltaTime * Vector3.right;
 
-        cloudRigidbody.velocity = movementDirection * lateralSpeed;
+        obstacleRigidbody.velocity = movementDirection * lateralSpeed;
 
-        if(Input.anyKey)
+        if(Input.anyKey) //Push action
         {
-            cloudRigidbody.velocity = Vector2.left * pushSpeed;
+            obstacleRigidbody.velocity = Vector2.left * pushSpeed;
         }
     }
 

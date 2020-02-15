@@ -133,5 +133,5 @@ MonoBehaviour:
   cloudObs: {fileID: 8824192768985154048}
   cloudRigidbody: {fileID: 8824192768985154054}
   lateralSpeed: 0.3
-  pushSpeed: 1
+  pushSpeed: 2
   direction: 0

@@ -438,7 +438,10 @@ MonoBehaviour:
     type: 3}
   obstacleTwo: {fileID: 0}
   obstacleThree: {fileID: 0}
-  spawnRange: 8
+  spawnRange: 9
+  obstacles:
+  - {fileID: 5449401092063097570, guid: b433697125b3e58459b2943a820b76af, type: 3}
+  - {fileID: 8824192768985154048, guid: a89460d2e10a24d4aa65791df787c193, type: 3}
 --- !u!4 &1251657188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5923159689909835579, guid: 80270b83922391944ac73177af899ba4,
@@ -586,6 +589,9 @@ MonoBehaviour:
   obstacleTwo: {fileID: 0}
   obstacleThree: {fileID: 0}
   spawnRange: 6
+  obstacles:
+  - {fileID: 5449401092063097570, guid: b433697125b3e58459b2943a820b76af, type: 3}
+  - {fileID: 5923159689909835580, guid: 80270b83922391944ac73177af899ba4, type: 3}
 --- !u!1 &2038572999
 GameObject:
   m_ObjectHideFlags: 0
