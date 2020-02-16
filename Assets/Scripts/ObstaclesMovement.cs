@@ -32,6 +32,7 @@ public class ObstaclesMovement : MonoBehaviour
     void Start()
     {
         Invoke("DestroyObject", 12f); //Time it takes to disappear
+        barControl = GameObject.Find ("UseBar");
     }
 
     
@@ -41,7 +42,7 @@ public class ObstaclesMovement : MonoBehaviour
 
         obstacleRigidbody.velocity = movementDirection * lateralSpeed;
 
-        if(barControl.GetComponent<BarScript>().canUse)
+        if(barControl.GetComponent<BarScript>().canUse == true)
         {
             PushWind();
         }

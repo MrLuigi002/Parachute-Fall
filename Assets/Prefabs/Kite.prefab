@@ -134,5 +134,5 @@ MonoBehaviour:
   barControl: {fileID: 3772518097010502199, guid: fdb292c4fc284804b964e20ca85c0898,
     type: 3}
   lateralSpeed: 0.3
-  pushSpeed: 2
+  pushSpeed: 3
   direction: 0
