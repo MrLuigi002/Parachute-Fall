@@ -6,6 +6,8 @@ public class ObstaclesMovement : MonoBehaviour
 {
     public Rigidbody2D obstacleRigidbody;
 
+    public GameObject barControl;
+
     public float lateralSpeed = 1f;     //Speed it moves
     public float pushSpeed = 10f;       //Speed at which it is pushed
 
@@ -39,14 +41,23 @@ public class ObstaclesMovement : MonoBehaviour
 
         obstacleRigidbody.velocity = movementDirection * lateralSpeed;
 
-        if(Input.anyKey) //Push action
+        if(barControl.GetComponent<BarScript>().canUse)
         {
-            obstacleRigidbody.velocity = Vector2.left * pushSpeed;
+            PushWind();
         }
+        
     }
 
     private void DestroyObject()
     {
         Destroy(gameObject);
+    }
+
+    public void PushWind()
+    {
+        if(Input.anyKey) //Push action
+        {
+            obstacleRigidbody.velocity = Vector2.left * pushSpeed;
+        }
     }
 }

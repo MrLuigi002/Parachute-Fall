@@ -131,6 +131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleRigidbody: {fileID: 5923159689909835578}
+  barControl: {fileID: 3772518097010502199, guid: fdb292c4fc284804b964e20ca85c0898,
+    type: 3}
   lateralSpeed: 1
   pushSpeed: 1
   direction: 1
