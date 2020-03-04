@@ -134,7 +134,7 @@ MonoBehaviour:
   obstacleRigidbody: {fileID: 879672400880451699}
   barControl: {fileID: 3772518097010502199, guid: fdb292c4fc284804b964e20ca85c0898,
     type: 3}
-  lateralSpeed: 0.3
+  lateralSpeed: 0.6
   pushSpeed: 3
   direction: 1
 --- !u!1 &4560526585486505666
